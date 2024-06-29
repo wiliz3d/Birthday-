@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 twilio = "*"
+pandas = "*"
+openpyxl = "*"
 
 [dev-packages]
 

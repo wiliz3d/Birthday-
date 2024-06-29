@@ -1,0 +1,15 @@
+{% extends 'children/base.html' %}
+
+{% block title %}Import Children{% endblock %}
+
+{% block content %}
+<h2>Import Children from Excel File</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="excel_file">Excel File</label>
+        <input type="file" class="form-control" id="excel_file" name="excel_file" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Import</button>
+</form>
+{% endblock %}

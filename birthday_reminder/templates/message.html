@@ -1,0 +1,15 @@
+{% extends 'children/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to the Birthday Reminder App!</h1>
+    <p class="lead">This is a simple app to send birthday messages to children.</p>
+    <hr class="my-4">
+    <p>Manage and send birthday messages easily.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'import_children' %}" role="button">Import Children</a>
+    <a class="btn btn-success btn-lg" href="{% url 'send_birthday_messages' %}" role="button">Send Birthday Messages</a>
+    <a class="btn btn-warning btn-lg" href="{% url 'notify_upcoming_birthdays' %}" role="button">Notify Upcoming Birthdays</a>
+</div>
+{% endblock %}
